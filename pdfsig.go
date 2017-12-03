@@ -13,7 +13,7 @@ import (
 	"github.com/davecgh/go-spew/spew"
 )
 
-var myPkcs7 pkcs7.PKCS7
+var myPkcs7 PKCS7
 
 func check(e error) {
 	if e != nil {
@@ -80,7 +80,7 @@ func main() {
 	fmt.Printf("Length of the contents of the PDF: %d\n", len(contentPDF))
 
 	//Parse the SignedData as a PKCS#7 DER encoded package
-	signaturePDF, err := pkcs7.Parse(dataDER)
+	signaturePDF, err := Parse(dataDER)
 	check(err)
 
 	//Get the only signer certificate

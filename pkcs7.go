@@ -766,6 +766,7 @@ func DegenerateCertificate(cert []byte) ([]byte, error) {
 	return asn1.Marshal(signedContent)
 }
 
+//Encryption algorithm definitions
 const (
 	EncryptionAlgorithmDESCBC = iota
 	EncryptionAlgorithmAES128GCM
