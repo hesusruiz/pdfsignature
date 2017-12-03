@@ -11,7 +11,6 @@ import (
 	"os"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/fullsailor/pkcs7"
 )
 
 var myPkcs7 pkcs7.PKCS7
